@@ -1,6 +1,5 @@
-package DnDCodingAssessment.src.main.java.namesorter;
+package namesorter;
 
-// import java.io.*;
 import java.util.*;
 
 public class NameSorterApp {
@@ -8,7 +7,11 @@ public class NameSorterApp {
         String inputFile = "unsorted-names-list.txt";
         String outputFile = "sorted-names-list.txt";
 
+        // testing for running
+        System.out.println("NameSorterApp is running!");
+
         try {
+            // Instantiate the necessary classes
             NameReader reader = new NameReader();
             NameSorter sorter = new NameSorter();
             NamePrinter printer = new NamePrinter();
@@ -22,7 +25,7 @@ public class NameSorterApp {
 
             System.out.println("\nSorted names written to: " + outputFile);
         } catch (Exception e) {
-            System.err.println("Error: "+ e.getMessage());
+            System.err.println("Error: " + e.getMessage());
         }
     }
 }
